@@ -1,0 +1,72 @@
+\ProvidesPackage{settings}
+
+\renewcommand{\baselinestretch}{1.25}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+\usepackage{lmodern}
+\usepackage[english]{babel}
+\usepackage{geometry} 
+\usepackage{fancyhdr}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{bm}
+\usepackage{multirow}
+\usepackage[Symbol]{upgreek}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[framed, numbered]{mcode}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{pgfplots}
+\usepackage{listings}
+\pgfplotsset{compat=1.13}
+\usepackage{tikz}
+\usepackage{pgfplotstable}
+\usepackage{tikz-3dplot}
+\usepackage{MnSymbol,wasysym}
+\usepackage{setspace}
+\usepackage{epstopdf}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{eurosym}
+\usepackage{amstext} % for \text
+%\DeclareRobustCommand{\officialeuro}{%
+%  \ifmmode\expandafter\text\fi
+%  {\fontencoding{U}\fontfamily{eurosym}\selectfont e}}
+%\geometry{a4paper,tmargin=2cm, bmargin=2.3cm, lmargin=3cm, rmargin=3cm, headheight=1cm, headsep=0.5cm, footskip=0.5cm}
+
+\pgfplotsset{yticklabel style={text width=3em,align=right}}
+\pgfplotsset{every tick label/.append style={font=\tiny}}
+
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert_2}
+\newcommand{\matvet}[1]{\bm{\mathrm{#1}}}
+\newcommand{\unit}[1]{\, \mathrm{#1}}
+\newlength\figureheight
+\newlength\figurewidth
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+%\newcommand{\namesigdate}[2][5cm]{%
+%	\begin{tabular}{@{}p{#1}@{}}
+%		#2 \\[1\normalbaselineskip] \hrule \\[-20pt]
+%		{\small \textit{Signature}}
+%	\end{tabular}
+%}   
+
+\fancyhf{} % tom header/footer
+\fancyhfoffset{20pt}
+\fancyhfoffset{20pt}
+\fancyhead[OL]{Wind Tech $\&$ Aerodynamics}
+\fancyhead[OR]{Assignment $\#3$ - Structural Mechanics}
+\fancyfoot[FL]{}
+\fancyfoot[FC]{\thepage}
+\fancyfoot[FR]{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\pagestyle{fancy}
+
+\definecolor{gray75}{gray}{0.75}
+\newcommand{\hsp}{\hspace{20pt}}
+
